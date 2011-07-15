@@ -5,7 +5,7 @@ Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
 Summary(pl.UTF-8):	Niezależna implementacja specyfikacji TAL, TALES i METAL
 Name:		python3-simpletal
 Version:	5.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://www.owlfish.com/software/simpleTAL/downloads/%{fname}-%{version}.tar.gz
@@ -55,8 +55,6 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 	--optimize=2
 
 cp -r examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-
-%py3_postclean
 
 %clean
 rm -rf $RPM_BUILD_ROOT
