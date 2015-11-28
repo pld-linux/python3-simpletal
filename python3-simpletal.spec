@@ -44,15 +44,13 @@ Pliki przykładów dla SimpleTAL.
 %setup -q -n %{fname}-%{version}
 
 %build
-%{__python3} setup.py build
+%py3_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__python3} setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py3_install
 
 cp -r examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
