@@ -11,6 +11,7 @@ Group:		Development/Languages/Python
 Source0:	http://www.owlfish.com/software/simpleTAL/downloads/%{fname}-%{version}.tar.gz
 # Source0-md5:	2c43fb2376d501c2957bda26c81c419f
 URL:		http://www.owlfish.com/software/simpleTAL/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python3
 %pyrequires_eq	python3-modules
 BuildArch:	noarch
