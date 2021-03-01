@@ -44,6 +44,12 @@ Pliki przykładów dla SimpleTAL.
 %prep
 %setup -q -n %{fname}-%{version}
 
+%{__sed} -E -i -e '1s,#!\s*/usr/bin/python(\s|$),#!%{__python}\1,' \
+      examples/basic/basic-example.py \
+      examples/cgi-example/simple-cgi.py \
+      examples/elementtree-example/basic-example.py \
+      examples/metal-example/metal-example.py
+
 %build
 %py3_build
 
