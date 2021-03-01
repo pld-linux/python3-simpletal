@@ -1,4 +1,4 @@
-%define 	fname	SimpleTAL
+%define		fname	SimpleTAL
 %define		module	%(echo %{fname} | tr A-Z a-z)
 
 Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
@@ -44,7 +44,7 @@ Pliki przykładów dla SimpleTAL.
 %prep
 %setup -q -n %{fname}-%{version}
 
-%{__sed} -E -i -e '1s,#!\s*/usr/bin/python(\s|$),#!%{__python}\1,' \
+%{__sed} -E -i -e '1s,#!\s*/usr/bin/python(\s|$),#!%{__python3}\1,' \
       examples/basic/basic-example.py \
       examples/cgi-example/simple-cgi.py \
       examples/elementtree-example/basic-example.py \
