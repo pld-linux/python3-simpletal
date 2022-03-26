@@ -5,7 +5,7 @@ Summary:	Stand alone implementation of the TAL, TALES and METAL specifications
 Summary(pl.UTF-8):	Niezależna implementacja specyfikacji TAL, TALES i METAL
 Name:		python3-simpletal
 Version:	5.1
-Release:	11
+Release:	12
 License:	BSD
 Group:		Development/Languages/Python
 Source0:	http://www.owlfish.com/software/simpleTAL/downloads/%{fname}-%{version}.tar.gz
